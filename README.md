@@ -1,85 +1,63 @@
-# Build a Duolingo Clone With Nextjs, React, Drizzle, Stripe (2024)
+# 🌍 MOZHI — Language Learning Buddy
 
-![Duolingo thumb (1)](https://github.com/AntonioErdeljac/next14-duolingo-clone/assets/23248726/d58e4b55-bb09-456f-978e-f5f31e81b870)
+<p align="center">
+  <img src="./public/logo.png" alt="MOZHI Logo" width="160"/>
+</p>
 
-This is a repository for a "Build a Duolingo Clone With Nextjs, React, Drizzle, Stripe (2024)" youtube video.
+<h3 align="center">Learn Languages. Connect Cultures.</h3>
 
-[VIDEO TUTORIAL](https://www.youtube.com/watch?v=dP75Khfy4s4)
+<p align="center">
+  A modern, interactive language-learning platform designed to make learning languages engaging, social, and accessible.
+</p>
 
-Key Features:
-- 🌐 Next.js 14 & server actions
-- 🗣 AI Voices using Elevenlabs AI
-- 🎨 Beautiful component system using Shadcn UI
-- 🎭 Amazing characters thanks to KenneyNL
-- 🔐 Auth using Clerk
-- 🔊 Sound effects
-- ❤️ Hearts system
-- 🌟 Points / XP system
-- 💔 No hearts left popup
-- 🚪 Exit confirmation popup
-- 🔄 Practice old lessons to regain hearts
-- 🏆 Leaderboard
-- 🗺 Quests milestones
-- 🛍 Shop system to exchange points with hearts
-- 💳 Pro tier for unlimited hearts using Stripe
-- 🏠 Landing page
-- 📊 Admin dashboard React Admin
-- 🌧 ORM using DrizzleORM
-- 💾 PostgresDB using NeonDB
-- 🚀 Deployment on Vercel
-- 📱 Mobile responsiveness
+<p align="center">
+  <a href="https://github.com/SarveshThiru/Mozhi-clone">
+    <img src="https://img.shields.io/badge/GitHub-MOZHI-black?style=for-the-badge&logo=github" alt="GitHub"/>
+  </a>
+  <img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge&logo=postgresql" alt="PostgreSQL"/>
+  <img src="https://img.shields.io/badge/Drizzle%20ORM-ORM-C5F74F?style=for-the-badge" alt="Drizzle"/>
+</p>
 
-### Prerequisites
+---
 
-**Node version 14.x**
+## 📖 About MOZHI
 
-### Cloning the repository
+**MOZHI** is a full-stack language-learning application inspired by modern language-learning platforms.
 
-```shell
-git clone https://github.com/AntonioErdeljac/next14-duolingo-clone.git
-```
+The goal of MOZHI is to make language learning more interactive by combining:
 
-### Install packages
+- 🎯 Structured lessons
+- 🧠 Vocabulary learning
+- 🔥 Daily learning streaks
+- ❤️ Lives / hearts system
+- ⭐ XP and progression
+- 🏆 Leaderboards
+- 🛒 In-app shop
+- 👤 User profiles
+- 📊 Learning progress
+- 🎮 Gamified learning experience
 
-```shell
-npm i
-```
+The name **MOZHI (மொழி)** comes from the Tamil word for **Language**, representing the core purpose of the platform — helping people learn languages and connect with different cultures.
 
-### Setup .env file
+---
 
+# ✨ Features
 
-```js
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=""
-CLERK_SECRET_KEY=""
-DATABASE_URL="postgresql://..."
-STRIPE_API_KEY=""
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
-STRIPE_WEBHOOK_SECRET=""
-```
+## 🎓 Interactive Lessons
 
-### Setup Drizzle ORM
+Users can progress through structured language lessons containing different exercises and learning activities.
 
-```shell
-npm run db:push
+### Learning flow
 
-```
-
-### Seed the app
-
-```shell
-npm run db:seed
-
-```
-
-or
-
-```shell
-npm run db:prod
-
-```
-
-### Start the app
-
-```shell
-npm run dev
-```
+```text
+Course
+  ↓
+Unit
+  ↓
+Lesson
+  ↓
+Exercises
+  ↓
+XP + Progress
